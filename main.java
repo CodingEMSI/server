@@ -15,6 +15,8 @@ public class Main {
 
             // Setup input and output streams for communication with the client
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            //String req = new String(clientSocket.getInputStream().readAllBytes(),StandardCharsets.UTF_8);
+
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 
             String req = in.readLine();
